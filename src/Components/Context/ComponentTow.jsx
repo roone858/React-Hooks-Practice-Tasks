@@ -3,5 +3,5 @@ import { Store } from "../../App";
 
 export default function ComponentTow() {
   const products = useContext(Store);
-  return <div>{products[0].title}</div>;
+  return <div>{products[0]?.title}</div>;
 }
